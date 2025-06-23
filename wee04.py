@@ -1,4 +1,78 @@
 
+words = ["cat", "house", "television", "flower", "rose", "pottery"]
+
+def longest_word(words: list[str]) -> str:
+  largest = words[0]
+  for i in range(1, len(words)):
+    if len(words[i]) > len(largest):
+      largest = words[i]
+  return largest
+
+print(longest_word(words))
+
+def shortest_word(words: list[str]) -> str:
+  shortest = words[0]
+  for i in range(1, len(words)):
+    if len(words[i]) < len(shortest):
+        shortest = words[i]
+  return shortest
+
+print(shortest_word(words))
+
+def odd_words(words: list[str]) -> list[str]:
+  odd = []
+  for i in range(len(words)):
+    if len(words[i]) % 2 == 1:
+      odd.append(words[i])
+  return odd
+# .append() makes sure the program prints every element that works in the function, not just one.
+# [] says that when we return "odd", it's going to print a list inside these brackets.
+
+print(odd_words(words))
+
+def average_words(words: list[str]) -> list[str]:
+  sum = 0
+  for i in range(len(words)):
+    sum = sum + len(words[i])
+  ave = sum / len(words)
+  result = []
+  for word in words:
+    if abs(len(word) - ave) <= 1:
+      result.append(word)
+  return result
+
+print(average_words(words))
+
+words2 = ["mower", "sun", "rose", "guitar", "pillow"]
+
+def intersect(words: list[str], words2: list[str]) -> bool:
+  found = False
+  i = 0
+  while i < len(words) and not found:
+    found = (words[i] in words2) # we can use in, because you can't compare a word to a list.
+    i = i + 1
+  return found
+
+print(intersect(words, words2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #--------------------------------------------------------------------------------#
 # ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎  WRITE YOUR CODE ABOVE THIS  LINE ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎
