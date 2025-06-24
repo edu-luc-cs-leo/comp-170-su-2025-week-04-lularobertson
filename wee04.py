@@ -11,11 +11,13 @@ def longest_word(words: list[str]) -> str:
 print(longest_word(words))
 
 def shortest_word(words: list[str]) -> str:
-  shortest = words[0]
-  for i in range(1, len(words)):
-    if len(words[i]) < len(shortest):
-        shortest = words[i]
-  return shortest
+  if words not None and len(words) > 0:
+  # checks exist and then non empty
+    shortest = words[0]
+    for i in range(1, len(words)):
+      if len(words[i]) < len(shortest):
+          shortest = words[i]
+    return shortest
 
 print(shortest_word(words))
 
