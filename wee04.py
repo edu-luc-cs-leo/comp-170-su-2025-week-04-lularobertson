@@ -57,7 +57,48 @@ print(intersect(words, words2))
 
 
 
+"""
+reflection:
 
+All my code runs well I think. It draws the correct shapes and they are centered.
+
+DIAMOND:
+I think my main mistake with the diamond is that its only changing dimension is the
+width versus the width and the hieght changing together. I should have scaled the two
+toegther like I did in the square and triangle. By making each half a loop, 
+I could then loop it how ever many times the height of the half would be.
+
+Another issue was my program just used a print statement to tell the user that the width
+was invalid if the input was an even number, and then instructed them to rerun the program
+and choose a different number. Even if I didn't just get the program to round the number to an
+odd one, I should have figured out a way to make it loop back to the question regarding width
+versus intructing them to rerun the program.
+
+RIGHT TRIANGLE:
+My code for the right triangle was good ...  I think. The only option was it make it
+with the angle on the left, but adding an option for the angle to be on the right would
+be a good idea.
+
+COMPOUNT INTEREST:
+Our code differed a little in this one too. I had the program print the amount of money
+that would be in the account every year until year N (the amount of years they wanted it in the account).
+I thought that was the intructions because the directions had multiple years listed.
+I also had to look up the .2f to round the number so it wouldn't be over 2 decimals since
+we are dealing with money.
+
+HOLLOW SQUARE:
+I think the hollow square was my best program. Plus it looks pretty cool depending on what character
+you use. Like the diamond, I did not round or change the inputs if the thickness of the walls
+was too large, I just intructed the user to rerun and imput a smaller size for the walls.
+
+
+Overall, we had different code. Mine was more similar to our sears tower we made in class.
+I also set the variables as inputs in the terminal versus parameters in the function.
+
+Other than the diamond shape, I would say my code for the rest of them was very functional
+and worked well.
+
+"""
 
 
 
